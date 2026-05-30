@@ -8,4 +8,5 @@ public class TokenDbContext : DbContext
     public TokenDbContext(DbContextOptions<TokenDbContext> options) : base(options) {}
     
     public DbSet<User> Users { get; set; }
+    public DbSet<RefreshToken> RefreshTokens { get; set; }
 }
